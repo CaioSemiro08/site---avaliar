@@ -1,0 +1,149 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <!-- Configurações técnicas e de responsividade -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechSolutions - Serviços Digitais</title>
+    <!-- Vinculação da folha de estilos externa -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    
+    <div id="banner-cookies" class="banner-cookies">
+    <p>
+        Utilizamos cookies para personalizar sua experiência. Ao continuar navegando, você concorda com a nossa política.
+    </p>
+    <button id="btn-aceitar-cookies" class="btn-cookies">Entendi e Aceito</button>
+</div>
+
+<script src="chatbot.js"></script>
+<script>
+    
+  // Inicializa o chatbot apontando para a sua base de dados extra em JSON
+  initChatbot({
+    jsonUrl: 'minha-base-dados.json'
+  });
+</script>
+</body>
+
+
+    <!-- 1. TOPO: Identificação e Menu de Navegação -->
+    <header class="cabecalho">
+        <img src="https://placehold.co/140x45/0d2847/ffffff?text=TechSolutions" alt="Logo TechSolutions" class="logo">
+        <nav class="menu">
+            <!-- Links âncora que rolam suavemente até as seções da página -->
+            <a href="#sobre">Sobre</a>
+            <a href="#servicos">Serviços</a>
+            <a href="#precos">Preços</a>
+            <a href="#contato" class="botao-destaque">Fale Conosco</a>
+        </nav>
+    </header>
+
+    <!-- 2. BANNER PRINCIPAL (HERO SECTION) -->
+    <section class="banner-principal">
+        <h1>Transformamos Ideias em Código Real</h1>
+        <p>Desenvolvemos plataformas ágeis, seguras e adaptadas ao seu negócio.</p>
+        <a href="#servicos" class="botao-banner">Conheça Nossas Soluções</a>
+    </section>
+
+    <!-- 3. QUEM SOMOS -->
+    <article class="secao-texto" id="sobre">
+        <h2>Sobre a Nossa Equipe</h2>
+        <p>Somos desenvolvedores em formação contínua, especializados na construção de interfaces modernas, acessíveis e focadas na melhor experiência do usuário.</p>
+    </article>
+
+    <!-- 4. CARDS DE SERVIÇOS (FLEXBOX / CARDS) -->
+    <section class="secao-cards" id="servicos">
+        <h2 class="titulo-secao">Nossos Serviços</h2>
+        <div class="container-cards">
+            <!-- Card 1 -->
+            <div class="card">
+                <span class="icone-servico">💻</span>
+                <h3>Desenvolvimento Web</h3>
+                <p>Criação de sites institucionais, sistemas dinâmicos e páginas promocionais rápidas.</p>
+            </div>
+            <!-- Card 2 -->
+            <div class="card">
+                <span class="icone-servico">🛡️</span>
+                <h3>Segurança Digital</h3>
+                <p>Auditoria de vulnerabilidades, blindagem de dados e boas práticas de proteção.</p>
+            </div>
+            <!-- Card 3 -->
+            <div class="card">
+                <span class="icone-servico">☁️</span>
+                <h3>Soluções em Nuvem</h3>
+                <p>Hospedagem, automação e integração de servidores remotos escaláveis.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. TABELA COMPARATIVA DE PLANOS -->
+    <section class="secao-tabela" id="precos">
+        <h2 class="titulo-secao">Planos e Vantagens</h2>
+        <table class="tabela-planos">
+            <thead>
+                <tr>
+                    <th>Recurso</th>
+                    <th>Iniciante</th>
+                    <th>Profissional</th>
+                    <th>Corporativo</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Páginas Inclusas</td>
+                    <td>Até 3</td>
+                    <td>Até 10</td>
+                    <td>Ilimitadas</td>
+                </tr>
+                <tr>
+                    <td>Suporte Técnico</td>
+                    <td>E-mail</td>
+                    <td>WhatsApp</td>
+                    <td>Plantão 24/7</td>
+                </tr>
+                <tr>
+                    <td>Segurança Avançada</td>
+                    <td>Básica</td>
+                    <td>Certificado SSL</td>
+                    <td>Firewall Dedicado</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- 6. FORMULÁRIO DE CONTATO -->
+    <section class="secao-formulario" id="contato">
+        <h2 class="titulo-secao">Envie uma Mensagem</h2>
+        <form class="formulario">
+            <label for="nome">Nome Completo:</label>
+            <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+
+            <label for="email">E-mail Corporativo:</label>
+            <input type="email" id="email" name="email" placeholder="seuemail@dominio.com" required>
+
+            <label for="tipo-servico">Serviço de Interesse:</label>
+            <select id="tipo-servico" name="tipo-servico">
+                <option value="web">Desenvolvimento Web</option>
+                <option value="seguranca">Segurança Digital</option>
+                <option value="nuvem">Soluções em Nuvem</option>
+            </select>
+
+            <label for="mensagem">Detalhes do Projeto:</label>
+            <textarea id="mensagem" name="mensagem" rows="4" placeholder="Descreva brevemente sua necessidade..."></textarea>
+
+            <button type="submit" class="botao-enviar">Solicitar Orçamento</button>
+        </form>
+    </section>
+
+    <!-- 7. RODAPÉ -->
+    <footer class="rodape">
+        <p>© 2026 TechSolutions - Desenvolvido pelos estudantes no módulo de Web Design e Front-End.</p>
+    </footer>
+
+</body>
+</html>
+

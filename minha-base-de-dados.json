@@ -1,0 +1,12 @@
+[
+  {
+    "pergunta": "Como redefinir a minha senha?",
+    "keywords": ["senha", "redefinir", "esqueci", "trocar", "acesso"],
+    "resposta": "Para redefinir a sua senha, vá à página de login e clique em **'Esqueci a minha senha'**."
+  },
+  {
+    "pergunta": "Qual é a política de devolução?",
+    "keywords": ["devolucao", "troca", "devolver", "reembolso"],
+    "resposta": "Aceitamos devoluções em até **30 dias** após a receção do produto."
+  }
+]
